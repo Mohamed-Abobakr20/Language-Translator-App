@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <div class="container text-center my-4 shadow px-4 py-5 rounded-2">
+            <h1 class="mb-5">Language Translator App</h1>
+            <div class="translate-area row g-4">
+                <div class="from col-md-6">
+                    <textarea
+                        class="w-100 form-control fs-5"
+                        name="traFrom"
+                        id="traFrom"
+                        cols="60"
+                        rows="8"
+                        style="resize: none" placeholder="From"></textarea>
+                </div>
+                <div class="to col-md-6">
+                    <textarea
+                        class="w-100 form-control fs-5"
+                        name="traTo"
+                        id="traTo"
+                        cols="60"
+                        rows="8"
+                        style="resize: none" placeholder="To"></textarea>
+                </div>
+            </div>
+            <div class="controls mt-4 d-flex justify-content-between align-items-center">
+                <div class="fromControls d-flex justify-content-between align-items-center">
+                    <div class=" d-flex justify-content-between align-items-center">
+                        <i class="fa-solid fa-volume-high" title="sound" role="button"></i>
+                        <i class="fa-solid fa-copy mx-md-3 mx-2" role="button" title="copy"></i>
+                    </div>
+                    <select
+                        name="fromSelect"
+                        class="form-select"
+                        id="fromSelect"></select>
+                </div>
+                <div class="exchange mx-1">
+                    <i class="fa-solid fa-right-left fs-5" role="button"></i>
+                </div>
+                <div class="toControls d-flex justify-content-between align-items-center">
+                    <select
+                        name="toSelect"
+                        id="toSelect"
+                        class="form-select"></select>
+                    <div class=" d-flex justify-content-between align-items-center">
+                        <i class="fa-solid fa-volume-high mx-md-3 mx-2" role="button" title="sound"></i>
+                        <i class="fa-solid fa-copy" role="button" title="copy"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/countries.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
